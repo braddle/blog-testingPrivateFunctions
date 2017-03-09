@@ -7,12 +7,7 @@ import "fmt"
 func Add(a, b int) string {
 	num := a + b
 
-	switch num {
-	case 4:
-		return "four"
-	default:
-		return fmt.Sprintf("Cannot convert %v to a string", num)
-	}
+	return intToString(num)
 }
 
 // Minus function take the value of b from the value of a and return the result
@@ -20,10 +15,17 @@ func Add(a, b int) string {
 func Minus(a, b int) string {
 	num := a - b
 
+	return intToString(num)
+}
+
+func intToString(num int) string {
 	switch num {
 	case 3:
 		return "three"
+	case 4:
+		return "four"
 	default:
 		return fmt.Sprintf("Cannot convert %v to a string", num)
 	}
+
 }
