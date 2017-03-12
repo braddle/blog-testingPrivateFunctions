@@ -20,6 +20,41 @@ func TestFiveAddFiveReturnsStringTen(t *testing.T) {
 	assertEquals(t, exp, act)
 }
 
+func TestFiveAddFourReturnsStringNine(t *testing.T) {
+	act := number.Add(5, 4)
+	exp := "nine"
+
+	assertEquals(t, exp, act)
+}
+
+func TestFourAddFourReturnsStringEight(t *testing.T) {
+	act := number.Add(4, 4)
+	exp := "eight"
+
+	assertEquals(t, exp, act)
+}
+
+func TestFourAddThreeReturnsStringSeven(t *testing.T) {
+	act := number.Add(4, 3)
+	exp := "seven"
+
+	assertEquals(t, exp, act)
+}
+
+func TestFourAddTwoReturnsStringSix(t *testing.T) {
+	act := number.Add(4, 2)
+	exp := "six"
+
+	assertEquals(t, exp, act)
+}
+
+func TestFourAddOneReturnsStringFive(t *testing.T) {
+	act := number.Add(4, 1)
+	exp := "five"
+
+	assertEquals(t, exp, act)
+}
+
 func TestSixAndFiveReturnsNumberNotConvertableString(t *testing.T) {
 	act := number.Add(6, 5)
 	exp := "Cannot convert 11 to a string"
