@@ -20,6 +20,12 @@ func Minus(a, b int) string {
 
 func intToString(num int) string {
 	switch num {
+	case 0:
+		return "zero"
+	case 1:
+		return "one"
+	case 2:
+		return "two"
 	case 3:
 		return "three"
 	case 4:

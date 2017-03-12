@@ -69,6 +69,27 @@ func TestSixMinusThreeReturnsStringThree(t *testing.T) {
 	assertEquals(t, exp, act)
 }
 
+func TestOneMinusOneReturnsStringZero(t *testing.T) {
+	act := number.Minus(1, 1)
+	exp := "zero"
+
+	assertEquals(t, exp, act)
+}
+
+func TestThreeMinusOneReturnsStringTwo(t *testing.T) {
+	act := number.Minus(3, 1)
+	exp := "two"
+
+	assertEquals(t, exp, act)
+}
+
+func TestTwoMinusOneReturnsStringOne(t *testing.T) {
+	act := number.Minus(2, 1)
+	exp := "one"
+
+	assertEquals(t, exp, act)
+}
+
 func TestThreeMinusSixReturnsNumberNotConvertableString(t *testing.T) {
 	act := number.Minus(3, 6)
 	exp := "Cannot convert -3 to a string"
