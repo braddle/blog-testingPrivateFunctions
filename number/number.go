@@ -24,8 +24,9 @@ func intToString(num int) string {
 		return "three"
 	case 4:
 		return "four"
+	case 10:
+		return "ten"
 	default:
 		return fmt.Sprintf("Cannot convert %v to a string", num)
 	}
-
 }

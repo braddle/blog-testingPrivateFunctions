@@ -13,6 +13,13 @@ func TestTwoAddTwoReturnsStringFour(t *testing.T) {
 	assertEquals(t, exp, act)
 }
 
+func TestFiveAddFiveReturnsStringTen(t *testing.T) {
+	act := number.Add(5, 5)
+	exp := "ten"
+
+	assertEquals(t, exp, act)
+}
+
 func TestSixAndFiveReturnsNumberNotConvertableString(t *testing.T) {
 	act := number.Add(6, 5)
 	exp := "Cannot convert 11 to a string"
@@ -32,7 +39,6 @@ func TestThreeMinusSixReturnsNumberNotConvertableString(t *testing.T) {
 	exp := "Cannot convert -3 to a string"
 
 	assertEquals(t, exp, act)
-
 }
 
 func assertEquals(t *testing.T, exp, act string) {
